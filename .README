@@ -1,0 +1,4 @@
+https://code.visualstudio.com/docs/languages/css
+
+scss compilation using tasks.json file
+ctrl+shift+B to compile

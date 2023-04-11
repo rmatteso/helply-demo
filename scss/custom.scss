@@ -1,0 +1,26 @@
+// Custom.scss
+
+@font-face {
+    src: url("fonts/sofia_pro_regular-webfont.woff2") format("woff2");
+
+    font-family: "Sofia Pro";
+    font-weight: 400;
+}
+
+// do the rest
+
+// 1. Include any default variable overrides here
+$primary: #FFD744;
+$secondary: #009278;
+
+$font-family-base: "Sofia Pro", sans-serif;
+
+@import "../bootstrap/scss/bootstrap";
+
+// 2. Add additional custom code here
+
+header {
+    #logo {
+        height: 41px;
+    }
+}
