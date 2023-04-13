@@ -15,6 +15,12 @@
 <body>
     <!-- appending shit here -->
 
+    <div class="container my-5">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-tertiary">Tertiary</button>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -22,7 +28,7 @@
             let content;
             $.get('components/header.html', function(data){
                 content= data;
-                $('body').append(content);
+                $('body').prepend(content);
             });
         })
     </script>
