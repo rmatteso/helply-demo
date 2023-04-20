@@ -1,7 +1,12 @@
 @charset "UTF-8";
 @font-face {
-  src: url("fonts/sofia_pro_regular-webfont.woff2") format("woff2");
+  src: url("fonts/sofia_pro/sofia_pro_regular-webfont.woff2") format("woff2");
   font-family: "Sofia Pro";
+  font-weight: 400;
+}
+@font-face {
+  src: url("fonts/aldo_ot_cev/alda_ot_cev_regular-webfont.woff2") format("woff2");
+  font-family: "Aldo OT CEV";
   font-weight: 400;
 }
 :root,
@@ -32,7 +37,7 @@
   --bs-primary: #FFD744;
   --bs-secondary: #009278;
   --bs-success: #198754;
-  --bs-info: #0dcaf0;
+  --bs-info: #EBF7FD;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
@@ -41,7 +46,7 @@
   --bs-primary-rgb: 255, 215, 68;
   --bs-secondary-rgb: 0, 146, 120;
   --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
+  --bs-info-rgb: 235, 247, 253;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
@@ -1867,7 +1872,7 @@ progress {
 
 .text-bg-info {
   color: #000 !important;
-  background-color: RGBA(13, 202, 240, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(235, 247, 253, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-warning {
@@ -1927,8 +1932,8 @@ progress {
   text-decoration-color: RGBA(var(--bs-info-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-info:hover, .link-info:focus {
-  color: RGBA(61, 213, 243, var(--bs-link-opacity, 1));
-  text-decoration-color: RGBA(61, 213, 243, var(--bs-link-underline-opacity, 1));
+  color: RGBA(239, 249, 253, var(--bs-link-opacity, 1));
+  text-decoration-color: RGBA(239, 249, 253, var(--bs-link-underline-opacity, 1));
 }
 
 .link-warning {
@@ -7019,7 +7024,7 @@ progress {
   --bs-primary: #FFD744;
   --bs-secondary: #009278;
   --bs-success: #198754;
-  --bs-info: #0dcaf0;
+  --bs-info: #EBF7FD;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
@@ -7028,7 +7033,7 @@ progress {
   --bs-primary-rgb: 255, 215, 68;
   --bs-secondary-rgb: 0, 146, 120;
   --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
+  --bs-info-rgb: 235, 247, 253;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
@@ -9991,19 +9996,19 @@ textarea.form-control-lg {
 
 .btn-info {
   --bs-btn-color: #000;
-  --bs-btn-bg: #0dcaf0;
-  --bs-btn-border-color: #0dcaf0;
+  --bs-btn-bg: #EBF7FD;
+  --bs-btn-border-color: #EBF7FD;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #31d2f2;
-  --bs-btn-hover-border-color: #25cff2;
-  --bs-btn-focus-shadow-rgb: 11, 172, 204;
+  --bs-btn-hover-bg: #eef8fd;
+  --bs-btn-hover-border-color: #edf8fd;
+  --bs-btn-focus-shadow-rgb: 200, 210, 215;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #3dd5f3;
-  --bs-btn-active-border-color: #25cff2;
+  --bs-btn-active-bg: #eff9fd;
+  --bs-btn-active-border-color: #edf8fd;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #0dcaf0;
-  --bs-btn-disabled-border-color: #0dcaf0;
+  --bs-btn-disabled-bg: #EBF7FD;
+  --bs-btn-disabled-border-color: #EBF7FD;
 }
 
 .btn-warning {
@@ -10143,19 +10148,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-info {
-  --bs-btn-color: #0dcaf0;
-  --bs-btn-border-color: #0dcaf0;
+  --bs-btn-color: #EBF7FD;
+  --bs-btn-border-color: #EBF7FD;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #0dcaf0;
-  --bs-btn-hover-border-color: #0dcaf0;
-  --bs-btn-focus-shadow-rgb: 13, 202, 240;
+  --bs-btn-hover-bg: #EBF7FD;
+  --bs-btn-hover-border-color: #EBF7FD;
+  --bs-btn-focus-shadow-rgb: 235, 247, 253;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #0dcaf0;
-  --bs-btn-active-border-color: #0dcaf0;
+  --bs-btn-active-bg: #EBF7FD;
+  --bs-btn-active-border-color: #EBF7FD;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #0dcaf0;
+  --bs-btn-disabled-color: #EBF7FD;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #0dcaf0;
+  --bs-btn-disabled-border-color: #EBF7FD;
   --bs-gradient: none;
 }
 
@@ -13862,7 +13867,7 @@ textarea.form-control-lg {
 
 .text-bg-info {
   color: #000 !important;
-  background-color: RGBA(13, 202, 240, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(235, 247, 253, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-warning {
@@ -13922,8 +13927,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-info-rgb), var(--bs-link-underline-opacity, 1));
 }
 .link-info:hover, .link-info:focus {
-  color: RGBA(61, 213, 243, var(--bs-link-opacity, 1));
-  text-decoration-color: RGBA(61, 213, 243, var(--bs-link-underline-opacity, 1));
+  color: RGBA(239, 249, 253, var(--bs-link-opacity, 1));
+  text-decoration-color: RGBA(239, 249, 253, var(--bs-link-underline-opacity, 1));
 }
 
 .link-warning {
@@ -18983,6 +18988,10 @@ textarea.form-control-lg {
 }
 header #logo {
   height: 41px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: "Aldo OT CEV", serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
