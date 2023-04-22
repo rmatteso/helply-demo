@@ -62,6 +62,15 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../bootstrap/scss/bootstrap";
 
+// custom mixins
+
+@mixin gradient($direction, $list) { 
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);  
+  }
+
 // 2. Add additional custom code here
 
 header {
@@ -72,4 +81,10 @@ header {
 
 h1, h2, h3, h4, h4 {
     font-family: "Aldo OT CEV", serif;
+}
+
+$bg-top-half-list: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
+
+.bg-top-half {
+    @include gradient(top, $bg-top-half-list);
 }

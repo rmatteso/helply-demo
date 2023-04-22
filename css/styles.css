@@ -18994,4 +18994,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: "Aldo OT CEV", serif;
 }
 
+.bg-top-half {
+  background: -webkit-linear-gradient(top, #EBF7FD 0%, #EBF7FD 40%, #fff 40%, #fff 100%);
+  background: -moz-linear-gradient(top, #EBF7FD 0%, #EBF7FD 40%, #fff 40%, #fff 100%);
+  background: -o-linear-gradient(top, #EBF7FD 0%, #EBF7FD 40%, #fff 40%, #fff 100%);
+  background: linear-gradient(top, #EBF7FD 0%, #EBF7FD 40%, #fff 40%, #fff 100%);
+}
+
 /*# sourceMappingURL=styles.css.map */
