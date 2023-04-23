@@ -31,7 +31,16 @@
             $.get('pages/home.html', function(data){
                 home = data;
                 $('body').append(home);
+
+                // so it doesn't execute first. this may be a pickle
+                let footer;
+                $.get('components/footer.html', function(data){
+                    footer = data;
+                    $('body').append(footer);
+                });
             });
+
+            
         })
     </script>
 </body>
