@@ -8,10 +8,24 @@
 }
 
 @font-face {
+    src: url("fonts/sofia_pro/sofia_pro_bold-webfont.woff2") format("woff2");
+
+    font-family: "Sofia Pro";
+    font-weight: 500;
+}
+
+@font-face {
     src: url("fonts/aldo_ot_cev/alda_ot_cev_regular-webfont.woff2") format("woff2");
 
     font-family: "Aldo OT CEV";
     font-weight: 400;
+}
+
+@font-face {
+    src: url("fonts/aldo_ot_cev/alda_ot_cev_bold-webfont.woff2") format("woff2");
+
+    font-family: "Aldo OT CEV";
+    font-weight: 500;
 }
 
 // do the rest
@@ -22,6 +36,7 @@
 // 2. Include any default variable overrides here
 $primary: #FFD744;
 $secondary: #009278;
+$blue: #092047;
 
 $bs-tertiary-color: #FDF9F1;
 $bs-info-color: #EBF7FD;
@@ -79,8 +94,17 @@ header {
     }
 }
 
+footer {
+    background: $blue;
+}
+
 h1, h2, h3, h4, h4 {
-    font-family: "Aldo OT CEV", serif;
+    font-weight: 500;
+
+    &.display {
+        font-family: "Aldo OT CEV", serif;
+        font-weight: 400;
+    }
 }
 
 $bg-top-half-list: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
@@ -97,6 +121,6 @@ $bg-top-half-list: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
 
 .card-img-fill-sm {
     width: 100%;
-    height: 12rem;
+    height: 12.5rem;
     object-fit: cover;
 }

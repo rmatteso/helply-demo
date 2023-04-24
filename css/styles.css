@@ -5,13 +5,23 @@
   font-weight: 400;
 }
 @font-face {
+  src: url("fonts/sofia_pro/sofia_pro_bold-webfont.woff2") format("woff2");
+  font-family: "Sofia Pro";
+  font-weight: 500;
+}
+@font-face {
   src: url("fonts/aldo_ot_cev/alda_ot_cev_regular-webfont.woff2") format("woff2");
   font-family: "Aldo OT CEV";
   font-weight: 400;
 }
+@font-face {
+  src: url("fonts/aldo_ot_cev/alda_ot_cev_bold-webfont.woff2") format("woff2");
+  font-family: "Aldo OT CEV";
+  font-weight: 500;
+}
 :root,
 [data-bs-theme=light] {
-  --bs-blue: #0d6efd;
+  --bs-blue: #092047;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -7853,7 +7863,7 @@ progress {
  */
 :root,
 [data-bs-theme=light] {
-  --bs-blue: #0d6efd;
+  --bs-blue: #092047;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -20700,8 +20710,16 @@ header #logo {
   height: 41px;
 }
 
+footer {
+  background: #092047;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-weight: 500;
+}
+h1.display, .display.h1, h2.display, .display.h2, h3.display, .display.h3, h4.display, .display.h4, h4.display {
   font-family: "Aldo OT CEV", serif;
+  font-weight: 400;
 }
 
 .bg-top-half {
@@ -20719,7 +20737,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 .card-img-fill-sm {
   width: 100%;
-  height: 12rem;
+  height: 12.5rem;
   object-fit: cover;
 }
 
