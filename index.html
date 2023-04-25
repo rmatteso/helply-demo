@@ -14,33 +14,16 @@
 </head>
 <body>
     <!-- appending shit here -->
-
-    
+    <div id="header_box"></div>
+    <div id="main_box"></div>
+    <div id="footer_box"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            
-            let header;
-            $.get('components/header.html', function(data){
-                header = data;
-                $('body').append(header);
-            });
-
-            let home;
-            $.get('pages/home.html', function(data){
-                home = data;
-                $('body').append(home);
-
-                // so it doesn't execute first. this may be a pickle
-                let footer;
-                $.get('components/footer.html', function(data){
-                    footer = data;
-                    $('body').append(footer);
-                });
-            });
-
-            
+            $('#header_box').load('components/header.html');
+            $('#main_box').load('pages/home.html');
+            $('#footer_box').load('components/footer.html');     
         })
     </script>
 </body>
