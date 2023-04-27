@@ -124,3 +124,49 @@ $bg-top-half-list: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
     height: 12.5rem;
     object-fit: cover;
 }
+
+
+.donut {
+    width: 8rem; 
+    height: 8rem;
+    border-radius: 50%;
+
+    background: conic-gradient(
+      $secondary 0deg 72deg,
+      $primary 72deg 360deg
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hole {
+        width: 6rem; 
+        height: 6rem;
+        border-radius: 50%;
+        background: #fff;
+    } 
+}
+
+.hex {
+    width: 4rem;
+    display: inline-block;
+    color: $primary;
+    position:relative;
+  
+    &:before {
+        content: "";
+        display: block;
+        background:currentColor;
+        padding-top: 90%;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+
+    .quo {
+        color: #000;
+        position: absolute;
+        margin-left: 36%;
+        top: 0;
+        font-size: 3rem;
+    }
+}

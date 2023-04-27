@@ -20741,4 +20741,41 @@ h1.display, .display.h1, h2.display, .display.h2, h3.display, .display.h3, h4.di
   object-fit: cover;
 }
 
+.donut {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: conic-gradient(#009278 0deg 72deg, #FFD744 72deg 360deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.donut .hole {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.hex {
+  width: 4rem;
+  display: inline-block;
+  color: #FFD744;
+  position: relative;
+}
+.hex:before {
+  content: "";
+  display: block;
+  background: currentColor;
+  padding-top: 90%;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.hex .quo {
+  color: #000;
+  position: absolute;
+  margin-left: 36%;
+  top: 0;
+  font-size: 3rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
