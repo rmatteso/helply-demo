@@ -16,11 +16,13 @@
     <!-- Care Advisor - No Advisor -->
     <section>
         <div class="container my-4 my-md-5 px-3 px-sm-1">
-            <div class="col-12">
-                <p class="fs-3 mb-4">
-                    You don't currently have a Care Advisor. Learn more about our Care Advisor services and how they can help you:
-                </p>
-                <a class="btn btn-lg btn-secondary text-light">Learn More</a>
+            <div class="col-12 border rounded">
+                <div class="container p-4 p-md-5">
+                    <p class="fs-4 mb-4 text-label">
+                        You don't currently have a Care Advisor. Learn more about our Care Advisor services and how they can help you:
+                    </p>
+                    <a class="btn btn-lg btn-secondary text-light">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -35,12 +37,13 @@
             <h3 class="mb-4">
                 All Tasks
             </h3>
-            <div id="action_items">
+            <div class="action-items mb-5">
+                <!-- action item -->
                 <div class="action-item mb-4">
                     <div class="rounded shadow card">
                         <div class="row">
                             <div class="action-flag bg-info rounded-start"></div>
-                            <div class="col-7 col-md-8 py-3 ms-4 me-auto">
+                            <div class="col-7 col-md-8 py-3 ms-3 me-auto">
                                 <div>
                                     <h4>Read an article about home adaptations</h4>
                                     <p class="text-label">Based on your concerns about home safety, we believe this article will be helpful in figuring out what is best for your care recipient's home</p>
@@ -55,12 +58,13 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- // -->
+                <!-- action item -->
                 <div class="action-item mb-4">
                     <div class="rounded shadow card">
                         <div class="row">
-                            <div class="action-flag bg-secondary rounded-start"></div>
-                            <div class="col-7 col-md-8 py-3 ms-4 me-auto">
+                            <div class="action-flag bg-primary rounded-start"></div>
+                            <div class="col-7 col-md-8 py-3 ms-3 me-auto">
                                 <div>
                                     <h4>Schedule your next call with your Care Advisor, Helen</h4>
                                     <p class="text-label">Your 60-day check-in date is two weeks away. Don’t forget to schedule a call with your Care Advisor.</p>
@@ -75,9 +79,89 @@
                         </div>
                     </div>
                 </div>
+                <!-- // -->
+                <!-- action item -->
+                <div class="action-item mb-4">
+                    <div class="rounded shadow card">
+                        <div class="row">
+                            <div class="action-flag bg-secondary rounded-start"></div>
+                            <div class="col-7 col-md-8 py-3 ms-3 me-auto">
+                                <div>
+                                    <h4>Schedule a home safety service</h4>
+                                    <p class="text-label">Based on your concerns about home safety, we believe scheduling a service for a home safety product and installation will be beneficial.</p>
+                                </div>
+                            </div>
+                            <div class="col-2 align-self-center me-4 me-md-0">
+                                <form class="d-flex flex-column">
+                                    <input id="AI-2-done" class="checkbox-xl" type="checkbox" value="" />
+                                    <label for="AI-2-done" class="mt-3 d-none d-sm-flex mx-auto text-label">Mark as complete</label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // -->
+            </div>
+
+            <h3 class="mb-4">
+                Completed Tasks
+            </h3>
+            <div class="action-items completed">
+                <!-- action item -->
+                <div class="action-item mb-4">
+                    <div class="rounded shadow card">
+                        <div class="row">
+                            <div class="action-flag bg-label rounded-start"></div>
+                            <div class="col-7 col-md-8 py-3 ms-3 me-auto">
+                                <div>
+                                    <h4>Read an article about taking care of a parent</h4>
+                                    <p class="text-label">Based on your profile, we believe learning about how to navigate taking care of a parent will be helpful when starting your caregiving journey. </p>
+                                </div>
+                            </div>
+                            <div class="col-2 align-self-center me-4 me-md-0">
+                                <form class="d-flex flex-column">
+                                    <input id="AI-2-done" class="checkbox-xl" type="checkbox" value="" checked />
+                                    <label for="AI-2-done" class="mt-3 d-none d-sm-flex mx-auto text-label">Mark as incomplete</label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // -->
             </div>
         </div>
     </section>
 
+    <div class="container p-0 mb-5">
+        <hr />
+    </div>
 
+    <!-- Past Assessments -->
+    <section id="past_assessments">
+        <div class="container p-3 p-md-0">
+            <h3 class="mb-4">Your most recent assessment</h3>
+            <div class="card">
+                <div class="card-header p-3 pt-4">
+                    <h4 class="fs-5"><i class="bi bi-calendar-check"></i> February 21, 2023, 4:30 pm</h4>
+                </div>
+                <div class="card-body py-4">
+                    <div>
+                        <h5 class="my-4">What we learned about you</h5>
+                        <p>
+                            <span class="badge rounded-pill text-bg-primary py-3 px-5 fs-6 me-4">Primary caregiver</span>
+                            <span class="badge rounded-pill text-bg-primary py-3 px-5 fs-6 me-4">Experienced caregiver</span>
+                            <span class="badge rounded-pill text-bg-primary py-3 px-5 fs-6 me-4">Taking care of a parent</span>
+                        </p>
+                    </div>
+                    <div>
+                        <h5 class="my-4">What we learned about your care needs</h5>
+                        <p>
+                            <span class="badge rounded-pill text-bg-primary py-3 px-5 fs-6 me-4">Companionship</span>
+                            <span class="badge rounded-pill text-bg-primary py-3 px-5 fs-6 me-4">Transportation</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>

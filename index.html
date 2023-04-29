@@ -27,14 +27,13 @@
             let target = getTarget();
             $('#main_box').load(`pages/${target}.html`);
             
-            $('#footer_box').load('components/footer.html');
-
-            
+            $('#footer_box').load('components/footer.html');        
         })
 
         window.addEventListener('hashchange', function () {
             let target = getTarget();
             $('#main_box').load(`pages/${target}.html`);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>

@@ -179,9 +179,14 @@ $bg-top-half-list: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
 
     .checkbox-xl {
         scale: 2.5;
+        //accent-color: $secondary
     }
 }
 
 .text-label {
     color: $label;
+}
+
+.bg-label {
+    background-color: #D9D9D9;
 }

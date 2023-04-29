@@ -20790,4 +20790,8 @@ h1.display, .display.h1, h2.display, .display.h2, h3.display, .display.h3, h4.di
   color: #606060;
 }
 
+.bg-label {
+  background-color: #D9D9D9;
+}
+
 /*# sourceMappingURL=styles.css.map */
