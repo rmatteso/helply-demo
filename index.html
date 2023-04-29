@@ -19,12 +19,23 @@
     <div id="footer_box"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/navigator.js"></script>
     <script>
         $(document).ready(function(){
             $('#header_box').load('components/header.html');
-            $('#main_box').load('pages/home.html');
-            $('#footer_box').load('components/footer.html');     
+
+            let target = getTarget();
+            $('#main_box').load(`pages/${target}.html`);
+            
+            $('#footer_box').load('components/footer.html');
+
+            
         })
+
+        window.addEventListener('hashchange', function () {
+            let target = getTarget();
+            $('#main_box').load(`pages/${target}.html`);
+        });
     </script>
 </body>
 </html>
