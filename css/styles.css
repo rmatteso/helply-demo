@@ -20778,4 +20778,12 @@ h1.display, .display.h1, h2.display, .display.h2, h3.display, .display.h3, h4.di
   font-size: 3rem;
 }
 
+.action-item .action-flag {
+  width: 2rem;
+  margin-left: 0.75rem;
+}
+.action-item .checkbox-xl {
+  scale: 2.5;
+}
+
 /*# sourceMappingURL=styles.css.map */

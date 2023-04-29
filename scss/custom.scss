@@ -170,3 +170,14 @@ $bg-top-half-list: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
         font-size: 3rem;
     }
 }
+
+.action-item {
+    .action-flag {
+        width: 2rem;
+        margin-left: 0.75rem;
+    }
+
+    .checkbox-xl {
+        scale: 2.5;
+    }
+}
