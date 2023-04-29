@@ -20786,4 +20786,8 @@ h1.display, .display.h1, h2.display, .display.h2, h3.display, .display.h3, h4.di
   scale: 2.5;
 }
 
+.text-label {
+  color: #606060;
+}
+
 /*# sourceMappingURL=styles.css.map */

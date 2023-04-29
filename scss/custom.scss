@@ -37,6 +37,7 @@
 $primary: #FFD744;
 $secondary: #009278;
 $blue: #092047;
+$label: #606060;
 
 $bs-tertiary-color: #FDF9F1;
 $bs-info-color: #EBF7FD;
@@ -125,7 +126,6 @@ $bg-top-half-list: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
     object-fit: cover;
 }
 
-
 .donut {
     width: 8rem; 
     height: 8rem;
@@ -180,4 +180,8 @@ $bg-top-half-list: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
     .checkbox-xl {
         scale: 2.5;
     }
+}
+
+.text-label {
+    color: $label;
 }
