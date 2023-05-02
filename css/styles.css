@@ -20722,11 +20722,18 @@ h1.display, .display.h1, h2.display, .display.h2, h3.display, .display.h3, h4.di
   font-weight: 400;
 }
 
-.bg-top-half {
+.bg-top-half-info {
   background: -webkit-linear-gradient(top, #EBF7FD 0%, #EBF7FD 40%, #fff 40%, #fff 100%);
   background: -moz-linear-gradient(top, #EBF7FD 0%, #EBF7FD 40%, #fff 40%, #fff 100%);
   background: -o-linear-gradient(top, #EBF7FD 0%, #EBF7FD 40%, #fff 40%, #fff 100%);
   background: linear-gradient(top, #EBF7FD 0%, #EBF7FD 40%, #fff 40%, #fff 100%);
+}
+
+.bg-top-half-tertiary {
+  background: -webkit-linear-gradient(top, #FDF9F1 0%, #FDF9F1 40%, #fff 40%, #fff 100%);
+  background: -moz-linear-gradient(top, #FDF9F1 0%, #FDF9F1 40%, #fff 40%, #fff 100%);
+  background: -o-linear-gradient(top, #FDF9F1 0%, #FDF9F1 40%, #fff 40%, #fff 100%);
+  background: linear-gradient(top, #FDF9F1 0%, #FDF9F1 40%, #fff 40%, #fff 100%);
 }
 
 .card-img-fill {

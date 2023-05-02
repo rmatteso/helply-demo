@@ -108,10 +108,15 @@ h1, h2, h3, h4, h4 {
     }
 }
 
-$bg-top-half-list: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
+$bg-top-half-info: $bs-info-color 0%, $bs-info-color 40%, #fff 40%, #fff 100%;
+$bg-top-half-tertiary: $bs-tertiary-color 0%, $bs-tertiary-color 40%, #fff 40%, #fff 100%;
 
-.bg-top-half {
-    @include gradient(top, $bg-top-half-list);
+.bg-top-half-info {
+    @include gradient(top, $bg-top-half-info);
+}
+
+.bg-top-half-tertiary {
+    @include gradient(top, $bg-top-half-tertiary);
 }
 
 .card-img-fill {

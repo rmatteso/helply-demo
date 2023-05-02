@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid bg-top-half">
+        <div class="container-fluid bg-top-half-info">
             <div class="container mb-5 px-2 px-sm-0">
                 <div id="welcome-video" class="col-md-8 mx-auto">
                     <embed width="100%" height="100%" src="https://www.youtube.com/embed/dWRCooFKk3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></embed>
@@ -27,10 +27,10 @@
             <div class="row g-3 g-md-5 px-3 px-md-0">
                 <div class="col-md-6 pe-md-5">
                     <div class="row h-100 bg-secondary text-light rounded p-4 p-lg-5">
-                        <div class="col-lg-3">
-                            Icon
+                        <div class="col-lg-3 icon-bg d-flex mb-4 mb-lg-0 mt-0 mt-lg-5">
+                            <img class="align-self-center" src="img/icons/no-help.svg">
                         </div>
-                        <div class="col-lg-9">
+                        <div class="col-lg-7 offset-lg-1">
                             <h3>If you know what you need</h3>
                             <p class="my-3 h-50">
                                 You just want a hand finding the right product or service to provide it. We've got a comprehensive directory to help right here.
@@ -40,11 +40,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 ps-md-5">
-                    <div class="row h-100 p-4 p-lg-5 rounded bg-primary">
-                        <div class="col-lg-3">
-                            Icon
+                    <div class="row h-100 p-4 p-lg-5 justify-content-center rounded bg-primary">
+                        <div class="col-lg-3 icon-bg d-flex mb-4 mb-lg-0 mt-0 mt-lg-5">
+                            <img class="align-self-center" src="img/icons/help.svg">
                         </div>
-                        <div class="col-lg-9">
+                        <div class="col-lg-7 offset-lg-1">
                             <h3>If you need a little help</h3>
                             <p class="my-3 h-50">
                                 Start with a virtual assessment to help us understand your needs, or go straight to connecting with a Care Advisor for more in-depth help.
@@ -209,5 +209,12 @@
     .ca_img {
         background:white;
         width: 100%;
+    }
+
+    .icon-bg {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        background: white;
     }
 </style>
