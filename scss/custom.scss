@@ -195,3 +195,8 @@ $bg-top-half-tertiary: $bs-tertiary-color 0%, $bs-tertiary-color 40%, #fff 40%, 
 .bg-label {
     background-color: #D9D9D9;
 }
+
+.yt-video {
+    height: calc(80vw * 0.20 + 10.5rem);
+    // would be better to lock the aspect ratio?
+}
