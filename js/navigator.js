@@ -1,4 +1,4 @@
-function getTarget() {
+function getParameters() {
     let here = window.location.href;
     let url = here.split('/');
     
@@ -26,17 +26,32 @@ function getTarget() {
         secondary_target = url[index + 2];
     }
 
-    let destination;
+    let destination = {
+        'main': target,
+        'secondary': secondary_target
+    };
 
     switch(target) {
         case "#":
-            destination = 'home';
+            destination.main = 'home';
             break;
         default:
-            destination = target;
-            break
+            //do nothing
+            break;
     }
 
     return destination;
 }
 
+function navigate() {
+    let parameters = getParameters();
+    $('#main_box')
+        .load(`pages/${parameters.main}.html`, function() {
+            if(parameters.secondary != undefined && parameters.secondary.length > 0){
+                console.log(`components/${parameters.main}/${parameters.secondary}.html`);
+                $('#secondary_box').load(`components/${parameters.main}/${parameters.secondary}.html`);
+            }
+    });
+    //needs error handling if .load failure at level 1 and 2
+    
+}

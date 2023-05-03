@@ -24,15 +24,14 @@
         $(document).ready(function(){
             $('#header_box').load('components/header.html');
 
-            let target = getTarget();
-            $('#main_box').load(`pages/${target}.html`);
+            navigate();
             
             $('#footer_box').load('components/footer.html');        
         })
 
         window.addEventListener('hashchange', function () {
-            let target = getTarget();
-            $('#main_box').load(`pages/${target}.html`);
+            navigate();
+
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
