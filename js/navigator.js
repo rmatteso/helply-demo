@@ -12,16 +12,13 @@ function getParameters() {
     let secondary_target;
 
     if (url.length == (index + 1)) {
-        console.log('home');
-        
+        //console.log('home');
         target = url[index];
     }else if (url.length == (index + 2)) {
-        console.log('top-level page');
-        
+        //console.log('top-level page');
         target = url[index + 1];
     }else if (url.length == (index + 3)) {
-        console.log('secondary-level page');
-        
+        //console.log('secondary-level page');
         target = url[index + 1];
         secondary_target = url[index + 2];
     }
@@ -48,7 +45,7 @@ function navigate() {
     $('#main_box')
         .load(`pages/${parameters.main}.html`, function() {
             if(parameters.secondary != undefined && parameters.secondary.length > 0){
-                console.log(`components/${parameters.main}/${parameters.secondary}.html`);
+                //console.log(`components/${parameters.main}/${parameters.secondary}.html`);
                 $('#secondary_box').load(`components/${parameters.main}/${parameters.secondary}.html`);
             }
     });
